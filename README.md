@@ -10,7 +10,7 @@ This project is an **automation workflow** (built with n8n) that lets user manag
   - `MOVE /SourceFolder/ FileName/ DestinationFolder` — move a file from source folder to destinaton folder.
   - `SUMMARY /FolderName` — summarize the contents of each file in the folder.
 - **OpenAI-powered file summaries** for PDF, DOCX, TXT files.
-- **Multi-file processing** using batching/looping.
+- **Multi-file processing** using batching/looping (Summarizes each file in the specified folder one by one).
 - Receive and trigger actions via **Twilio WhatsApp messages**.
 
 ## Prerequisites
@@ -66,7 +66,7 @@ You can control **Google Drive** by sending WhatsApp messages in the following f
 | LIST /FolderName       | LIST /ProjectX                  | Lists all files in the folder(`ProjectX`). If folder(ProjectX) doesn't exist it returns `Folder doesn't exist`. If folder has no files it returns `Folder is empty.`           |
 | DELETE /FolderName/FileName | DELETE /ProjectX/report.pdf     | Deletes the file `report.pdf` from folder `ProjectX`.    |
 | MOVE /SourceFolder/FileName/DestinationFolder | MOVE /ProjectX/report.pdf /Archive | Moves `report.pdf` file from `ProjectX` folder to `Archive` folder. |
-| SUMMARY /FolderName    | SUMMARY /ProjectX               | Summarizes the content of each file in folder `ProjectX`. |
+| SUMMARY /FolderName    | SUMMARY /ProjectX               | Summarizes the content of each file in `ProjectX` folder. |
 
 
 ##  Advancements to be done
