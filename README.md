@@ -58,6 +58,7 @@ git clone https://github.com/VidyaMuvva789/WhatsApp-Driven-Google-Drive-Assistan
 ## Command Syntax
 
 You can control **Google Drive** by sending WhatsApp messages in the following formats:
+- Commands are case-insensitive (LIST or list or List or liSt anything can be typed by user). 
 
 
 | Command                | Example                          | Description                                      |
@@ -66,3 +67,9 @@ You can control **Google Drive** by sending WhatsApp messages in the following f
 | DELETE /FolderName/FileName | DELETE /ProjectX/report.pdf     | Deletes the file `report.pdf` from folder `ProjectX`.    |
 | MOVE /SourceFolder/FileName/DestinationFolder | MOVE /ProjectX/report.pdf /Archive | Moves `report.pdf` file from `ProjectX` folder to `Archive` folder. |
 | SUMMARY /FolderName    | SUMMARY /ProjectX               | Summarizes the content of each file in folder `ProjectX`. |
+
+
+##  Advancements to be done
+
+- Maintain an audit spreadsheet/log to track all actions.
+- Guard against accidental mass deletion (e.g., require a confirmation keyword).
